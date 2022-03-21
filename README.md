@@ -1,4 +1,4 @@
 ## Aluno
-Ícaro Chiabai
+* Ícaro Chiabai
 ## Curso
-Engenharia de Computação - 34
+* Engenharia de Computação - 34
