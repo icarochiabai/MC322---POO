@@ -1,2 +1,3 @@
-## Lab 02 - Programas em Java
-Alguns desafios com a intenção de introduzir a linguagem de programação Java.
+# Lab02 - Do C para o Java
+## Notebook sobre Java Estruturas
+> (Notebook)[notebook/lab02-java-estruturas-ra247171.ipynb]
