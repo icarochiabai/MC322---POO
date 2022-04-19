@@ -11,9 +11,6 @@ public class AppRestaUm {
       
       String commands[] = tk.retrieveCommands();
       
-      for (int l = 0; l < commands.length; l++)
-         System.out.println(commands[l]);
-      
       Tabuleiro t = new Tabuleiro();
       
       tk.writeBoard("Tabuleiro inicial", t.getTab());

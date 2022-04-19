@@ -36,14 +36,18 @@ public class Peca {
 		}
 		// Realizacao do 'movimento' \/ -> O lugar alvo ta vazio? Ta na mesma linha/coluna? A distancia entre os lugares eh 1?
 		if(alvo.getC() == '-' && this.getX() == alvo.getX() && Math.abs(this.getY() - alvo.getY()) == 2){
-			alvo.setC('P');
-			this.setC('-');
-			t[this.getX()][alvo.getY() + inc].setC('-');
+			if(t[this.getX()][alvo.getY() + inc].getC() == 'P') {
+				alvo.setC('P');
+				this.setC('-');
+				t[this.getX()][alvo.getY() + inc].setC('-');
+			}
 		}
 		else if(alvo.getC() == '-' && this.getY() == alvo.getY() && Math.abs(this.getX() - alvo.getX()) == 2) {
-			alvo.setC('P');
-			this.setC('-');
-			t[alvo.getX() + inc][this.getY()].setC('-');
+			if(t[this.getX() + inc][alvo.getY()].getC() == 'P') {
+				alvo.setC('P');
+				this.setC('-');
+				t[alvo.getX() + inc][this.getY()].setC('-');
+			}
 		} else {
 //			System.out.println("Movimento inválido.");
 		}
